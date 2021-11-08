@@ -1,0 +1,29 @@
+<h1>{{ title }}</h1>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Ssn</td>
+    <td>Bdate</td>
+    <td>Salary</td>
+  </tr>
+  {{#each employee}}
+    <form method="post">
+      <tr>
+        <td>{{Name}}</td>
+        <td>{{Ssn}}</td>
+        <td>{{Bdate}}</td>
+        <td>{{Salary}}</td>
+        <td style="border: none; margin-left: 10px;">
+          <button 
+            style="margin-left: 10px;"
+            type="submit" 
+            name="delBtn"
+            value={{Salary}} 
+            formaction="/delete">
+          삭제
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>

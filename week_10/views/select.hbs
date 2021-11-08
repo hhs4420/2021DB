@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Ssn</td>
+        <td>Bdate</td>
+        <td>Salary</td>
+    </tr>
+    {{#each employee}}
+    <tr>
+        <td>{{Name}}</td>
+        <td>{{Ssn}}</td>
+        <td>{{Bdate}}</td>
+        <td>{{Salary}}</td>
+    </tr>
+    {{/each}}
+</table>
